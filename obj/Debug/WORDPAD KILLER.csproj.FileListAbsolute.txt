@@ -12,3 +12,4 @@ C:\Users\Haci\source\repos\WORDPAD KILLER\WORDPAD KILLER\obj\Debug\WORDPAD KILLE
 C:\Users\Haci\source\repos\WORDPAD KILLER\WORDPAD KILLER\obj\Debug\WORDPAD_KILLER.Form1.resources
 C:\Users\Haci\source\repos\WORDPAD KILLER\WORDPAD KILLER\obj\Debug\WORDPAD KILLER.csproj.ResolveComReference.cache
 C:\Users\Haci\source\repos\WORDPAD KILLER\WORDPAD KILLER\bin\Debug\MetroFramework.Design.dll
+C:\Users\Haci\source\repos\WORDPAD KILLER\WORDPAD KILLER\bin\Debug\Bunifu_UI_v1.52.dll

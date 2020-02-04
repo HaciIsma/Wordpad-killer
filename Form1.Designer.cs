@@ -95,6 +95,7 @@
             this.Save.Size = new System.Drawing.Size(75, 23);
             this.Save.TabIndex = 2;
             this.Save.Text = "Save";
+            this.Save.UseSelectable = true;
             // 
             // textBox2
             // 
@@ -119,6 +120,7 @@
             this.Load.Size = new System.Drawing.Size(75, 23);
             this.Load.TabIndex = 1;
             this.Load.Text = "Load";
+            this.Load.UseSelectable = true;
             // 
             // textBox1
             // 
@@ -135,6 +137,7 @@
             this.Colorcmb.Name = "Colorcmb";
             this.Colorcmb.Size = new System.Drawing.Size(149, 29);
             this.Colorcmb.TabIndex = 1;
+            this.Colorcmb.UseSelectable = true;
             // 
             // alignmentLab
             // 
@@ -155,6 +158,7 @@
             this.Right.TabIndex = 6;
             this.Right.Text = "R";
             this.Right.UseVisualStyleBackColor = true;
+            this.Right.Click += new System.EventHandler(this.Right_Click);
             // 
             // Italic
             // 
@@ -166,6 +170,7 @@
             this.Italic.TabIndex = 3;
             this.Italic.Text = "I";
             this.Italic.UseVisualStyleBackColor = true;
+            this.Italic.Click += new System.EventHandler(this.Italic_Click);
             // 
             // Center
             // 
@@ -177,6 +182,7 @@
             this.Center.TabIndex = 5;
             this.Center.Text = "C";
             this.Center.UseVisualStyleBackColor = true;
+            this.Center.Click += new System.EventHandler(this.Center_Click);
             // 
             // Left
             // 
@@ -189,6 +195,7 @@
             this.Left.TabIndex = 4;
             this.Left.Text = "L";
             this.Left.UseVisualStyleBackColor = false;
+            this.Left.Click += new System.EventHandler(this.Left_Click);
             // 
             // Underline
             // 
@@ -212,6 +219,7 @@
             this.Bold.TabIndex = 1;
             this.Bold.Text = "B";
             this.Bold.UseVisualStyleBackColor = false;
+            this.Bold.Click += new System.EventHandler(this.Bold_Click);
             // 
             // frontStyle
             // 
@@ -304,6 +312,8 @@
             this.sizecmbox.Name = "sizecmbox";
             this.sizecmbox.Size = new System.Drawing.Size(43, 29);
             this.sizecmbox.TabIndex = 3;
+            this.sizecmbox.UseSelectable = true;
+            this.sizecmbox.SelectedIndexChanged += new System.EventHandler(this.sizecmbox_SelectedIndexChanged_1);
             // 
             // Fontcmbox
             // 
@@ -313,6 +323,8 @@
             this.Fontcmbox.Name = "Fontcmbox";
             this.Fontcmbox.Size = new System.Drawing.Size(121, 29);
             this.Fontcmbox.TabIndex = 2;
+            this.Fontcmbox.UseSelectable = true;
+            this.Fontcmbox.SelectedIndexChanged += new System.EventHandler(this.Fontcmbox_SelectedIndexChanged_1);
             // 
             // Text
             // 
@@ -327,7 +339,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(846, 636);
+            this.ClientSize = new System.Drawing.Size(1089, 636);
             this.Controls.Add(this.Text);
             this.Controls.Add(this.metroPanel1);
             this.Name = "Form1";
