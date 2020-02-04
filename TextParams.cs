@@ -7,7 +7,7 @@ namespace WORDPAD_KILLER
         public string str { get; set; }
 
         public string Front { get; set; }
-        public string Color { get; set; }
+        public Color Color { get; set; } = Color.Black;
         public float Size { get; set; } = 8.5f;
 
         public string FamilyName { get; set; } = "Microsoft Sans Serif";

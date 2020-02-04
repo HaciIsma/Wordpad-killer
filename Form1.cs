@@ -44,7 +44,6 @@ namespace WORDPAD_KILLER
         }
         private void FrontStyleMake(string familyName, float emSize, GraphicsUnit unit, byte gdiCharSet)
         {
-
             if (@params.Italic && @params.Bold && @params.Underline)
             {
                 this.Text.Font = new System.Drawing.Font(familyName, emSize, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline)
@@ -102,7 +101,8 @@ namespace WORDPAD_KILLER
         }
         private void Colorcmb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            @params.Color = Colorcmb.SelectedItem.ToString();
+           // @params.Color = (Color)Colorcmb.SelectedItem;
+            Text.BackColor = (Color)Colorcmb.SelectedItem;
         }
         private void Bold_Click(object sender, EventArgs e)
         {
